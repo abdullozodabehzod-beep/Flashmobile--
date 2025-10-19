@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="icon" href="img/address-book-solid-full.svg" type="image" class="betaphone">
+    <link rel="stylesheet" href="King mobile.css">
+     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+</head>
+<body>
+    <style>
+        .contact1{
+            display: flex;
+            background-color: beige;
+            width: 100%;
+            height: 300px;
+            margin-top: 150px;
+        
+
+        }
+
+        .text-contact{
+        color: rgb(255, 174, 0);
+        margin-left: 800px;
+        margin-top: 50px;
+        font-size: 50px;
+        font-weight: bold;
+        }
+
+        .contact-block{
+        display: inline-block;
+        position: relative;
+        left: 240px;
+        margin: 30px;
+        border: 2px solid rgb(255, 166, 0);
+        border-radius: 20px;
+        width: 300px;
+        height: 300px;
+        }
+
+        .adress{
+            position: relative;
+            left: 100px;
+            font-size: 30px;
+        }
+    </style>
+    <header class="header" data-aos="fade-up">
+    <span><a href="#"><img src="img/bolt-solid-full.svg" alt="one" width="80px" height="80px" style="position: relative; top: 20px;"></a></span>
+    <span ><a href="King mobile.html" class="mobile">Flashmobile</a></span>
+    <a href="tariff.html" class="tariff"><span id="translate1">Тарифы</span></a>
+    <a href="options.html" style="text-decoration: none;"><span class="option" id="translate2">Опции</span></a>
+    <a href="numbers.html" style="text-decoration: none;"><span class="numbers"id="translate3">Номера</span></a>
+    <span class="ournumber"><a href="#">+992 333 000 333</a></span> 
+    <span><img src="img/location-dot-solid-full.svg" class="imgmap" width="27px" height="27px"></span>
+    <span><a href="Душанбе.html" class="city" id="translate4">Душанбе</span></a>
+    <span><a href="contact.html" class="contact" id="translate5">Контакты</a></span>
+    <span><a href="service.html" class="service" id="translate6">Услуги</a></span>
+    <span class="select-lang">
+       <select id="language" onchange="changeLanguage()">
+        <option value="ru">RU</option>
+        <option value="en">EN</option>
+       </select>
+    </span>
+    </header>
+    <div class="contact1" data-aos="fade-up"><p class="text-contact">Контакты</p></div>
+   
+    <div class="contact-block" data-aos="fade-up"><img src="img/location-dot-solid-full.svg" width="130px" height="130px" alt="location" style="margin: 20px; position: relative; left: 70px;"><p class="adress">Адрес</p></div>
+     <div class="contact-block" data-aos="fade-up"><img src="img/envelope-solid-full.svg" width="130px" height="130px" alt="location" style="margin: 20px; position: relative; left: 70px;"><p class="adress">Почта</p></div>
+      <div class="contact-block" data-aos="fade-up"><img src="img/phone-volume-solid-full1.svg" width="130px" height="130px" alt="location" style="margin: 20px; position: relative; left: 60px;"><p class="adress">Колл-центр</p></div>
+       <div class="contact-block" data-aos="fade-up"><img src="img/mobile-screen-button-solid-full.svg" width="130px" height="130px" alt="location" style="margin: 20px; position: relative; left: 60px;"><p class="adress">Телефон</p></div>
+       
+       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+
+      <script src="King mobile.js"></script>
+</body>
+</html>

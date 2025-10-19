@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Номера</title>
+    <link rel="icon" href="img/phone-volume-solid-full1.svg" type="image" class="betaphone">
+    <link rel="stylesheet" href="King mobile.css">
+     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+</head>
+<body>
+    <style>
+    .text-tarif{
+            font-size: 40px;
+            padding: 50px;
+            margin: 130px;
+            position: relative;
+            top: 150px;
+            left: 50px;
+            font-weight: bold;
+            transition: all 0.5s ease;
+            cursor: pointer; 
+            
+        }
+
+        .text-tarif:hover{
+            color: #ffd412;
+        }
+
+
+.custom-select {
+text-align: center;  
+ margin: 200px;
+  width: 200px;
+  margin-bottom: 20px;
+  position: relative;
+  font-family: sans-serif;
+  
+ 
+}
+
+.select-header {
+  position: relative;
+  left: 500px;
+  padding: 10px;
+  background: #ffffff;
+  border: 5px solid #ffd412;
+  border-radius: 20px;
+  cursor: pointer;
+  user-select: none;
+ 
+}
+
+.select-options {
+ position: relative;
+ top: -50px;
+  max-height: 0;
+  overflow: none;
+  transition: max-height 0.3s ease;
+  border: 5px solid #00dd4a;
+  border-top: none;
+  background: white;
+  
+}
+
+.select-options.open {
+  max-height: 150px; /* ограничиваем высоту, создаём скролл */
+  overflow-y: auto;
+  
+}
+
+.select-options div {
+  padding: 10px;
+  margin: 15px;
+  border: 2px solid #1eff00;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.select-options div:hover {
+  background-color: #ececec;
+}
+        
+
+    </style>
+   <header class="header" data-aos="fade-up">
+    <span><a href="#"><img src="img/bolt-solid-full.svg" alt="one" width="80px" height="80px" style="position: relative; top: 20px;"></a></span>
+    <span ><a href="King mobile.html" class="mobile">Flashmobile</a></span>
+    <a href="tariff.html" class="tariff"><span id="translate1">Тарифы</span></a>
+    <a href="options.html" style="text-decoration: none;"><span class="option" id="translate2">Опции</span></a>
+    <a href="numbers.html" style="text-decoration: none;"><span class="numbers"id="translate3">Номера</span></a>
+    <span class="ournumber"><a href="#">+992 333 000 333</a></span> 
+    <span><img src="img/location-dot-solid-full.svg" class="imgmap" width="27px" height="27px"></span>
+    <span><a href="Душанбе.html" class="city" id="translate4">Душанбе</span></a>
+    <span><a href="contact.html" class="contact" id="translate5">Контакты</a></span>
+    <span><a href="service.html" class="service" id="translate6">Услуги</a></span>
+    <span class="select-lang">
+       <select id="language" onchange="changeLanguage()">
+        <option value="ru">RU</option>
+        <option value="en">EN</option>
+       </select>
+    </span>
+    </header>
+    <span class="text-tarif ">Номера</span>
+    <div class="custom-select">
+  <div class="select-header" data-aos="fade-up">Дорогой</div>
+  <div class="select-options" data-aos="fade-up">
+    <div>+992109709400</div>
+    <div>+992109389400</div>
+    <div>+992109659400</div>
+    <div>+992119309400</div>
+  </div>
+</div>
+
+<div class="custom-select" data-aos="fade-up">
+  <div class="select-header">Топ</div>
+  <div class="select-options">
+    <div>+992109367400</div>
+    <div>+992109368400</div>
+    <div>+992109369400</div>
+    <div>+992109000400</div>
+  </div>
+</div>
+
+<div class="custom-select" data-aos="fade-up">
+  <div class="select-header">Vip</div>
+  <div class="select-options">
+    <div>+992400400400</div>
+    <div>+992000300400</div>
+    <div>+9920093009400</div>
+    <div>+992100300400</div>
+    
+  </div>
+</div>
+
+    
+    <script>
+    document.querySelectorAll('.custom-select').forEach(select => {
+  const header = select.querySelector('.select-header');
+  const options = select.querySelector('.select-options');
+
+  header.addEventListener('click', () => {
+    const isOpen = options.classList.contains('open');
+
+    // Закрыть все открытые
+    document.querySelectorAll('.select-options.open').forEach(openBlock => {
+      openBlock.classList.remove('open');
+    });
+
+    // Открыть/закрыть текущий
+    if (!isOpen) {
+      options.classList.add('open');
+    }
+  });
+
+  // Выбор опции
+  options.addEventListener('click', e => {
+    if (e.target.tagName === 'DIV') {
+      header.textContent = e.target.textContent;
+      options.classList.remove('open');
+    }
+  });
+});
+
+// (Необязательно) Закрытие при клике вне селекта
+document.addEventListener('click', e => {
+  if (!e.target.closest('.custom-select')) {
+    document.querySelectorAll('.select-options.open').forEach(openBlock => {
+      openBlock.classList.remove('open');
+    });
+  }
+});
+</script>
+
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+
+      <script src="King mobile.js"></script>
+
+</body>
+</html>
+
+
+
+

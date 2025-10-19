@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тарифы</title>
+    <link rel="stylesheet" href="King mobile.css">
+     <link rel="icon" href="img/bolt-solid-full.svg" type="image" class="betaphone">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+    
+</head>
+    <style>
+        
+        .text-tarif{
+            font-size: 40px;
+            padding: 50px;
+            margin: 130px;
+            position: relative;
+            top: 150px;
+            left: 50px;
+            font-weight: bold;
+            transition: all 0.5s ease;
+            cursor: pointer; 
+            
+        }
+
+        .text-tarif:hover{
+            color: #ffd412;
+        }
+        .my-tariff{
+            display: flex;
+            gap: 10px;
+            cursor: pointer;
+        }
+
+        .my-tariff1{
+            width: 300px;
+            height: 400px;
+            border: 5px solid #ffd412;
+            border-radius: 20px;
+            line-height: 40px;
+            margin-top: 200px;
+            margin-left: 220px;
+            position: relative;
+            
+        }
+
+        .click-tariff{
+            text-align: center;
+            border: 2px solid rgb(30, 255, 0);
+            border-radius: 50px;
+            padding: 0;
+            border-style: 10px;
+            margin: 10px;
+            transition: all 0.5s ease;
+        }
+
+        .click-tariff:hover{
+            background-color: rgb(30, 255, 0);
+        }
+
+        details {
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+            max-height: 2.5em;
+            border: 2px solid #ffd412;
+            border-radius: 20px;
+        }
+
+        details.open {
+            max-height: 200px;
+        }
+
+        summary{
+            padding: 10px;
+            cursor: pointer;
+            list-style: none;
+        }
+
+        details div.content {
+            padding: 10px;
+            border-top: 2px solid white;
+
+
+        }
+
+        
+    </style>
+<body>
+    
+    <header class="header" data-aos="fade-up">
+    <span><a href="#"><img src="img/bolt-solid-full.svg" alt="one" width="80px" height="80px" style="position: relative; top: 20px;"></a></span>
+    <span ><a href="King mobile.html" class="mobile">Flashmobile</a></span>
+    <a href="tariff.html" class="tariff"><span id="translate1">Тарифы</span></a>
+    <a href="options.html" style="text-decoration: none;"><span class="option" id="translate2">Опции</span></a>
+    <a href="numbers.html" style="text-decoration: none;"><span class="numbers"id="translate3">Номера</span></a>
+    <span class="ournumber"><a href="#">+992 333 000 333</a></span> 
+    <span><img src="img/location-dot-solid-full.svg" class="imgmap" width="27px" height="27px"></span>
+    <span><a href="Душанбе.html" class="city" id="translate4">Душанбе</span></a>
+    <span><a href="contact.html" class="contact" id="translate5">Контакты</a></span>
+    <span><a href="service.html" class="service" id="translate6">Услуги</a></span>
+    <span class="select-lang">
+       <select id="language" onchange="changeLanguage()">
+        <option value="ru">RU</option>
+        <option value="en">EN</option>
+       </select>
+    </span>
+    </header>
+    
+     <span class="text-tarif " >Тарифы</span>
+     <span class="text-tarif ">Аукцион</span>
+    
+    <div class="my-tariff"  data-aos="fade-up">
+        <div class="my-tariff1">
+            <p class="beta">25-Бета</p>
+             <p class="mb"><img src="img/circle-check-regular-full.svg" alt="img" width="30px" height="30px" style="position: relative; top: 5px;">25000мб</p>
+             <p class="mb"><img src="img/circle-check-regular-full.svg" alt="img" width="30px" height="30px" style="position: relative; top: 5px;">100смс</p>
+             <p class="mb"><img src="img/circle-check-regular-full.svg" alt="img" width="30px" height="30px" style="position: relative; top: 5px;">1000минут</p>
+             <li class="mb" title="circle">Внутри звонки сети безлитное</li>
+             <div class="click-tariff">Подключить</div>
+        </div>
+          
+            <div class="my-tariff1">
+    <p class="beta">50-Бета</p>
+     <p class="mb"><img src="img/circle-check-regular-full.svg" alt="img" width="30px" height="30px" style="position: relative; top: 5px;">50000мб </p>
+  <p class="mb"><img src="img/circle-check-regular-full.svg" alt="img" width="30px" height="30px" style="position: relative; top: 5px;">100смс</p>
+  <p class="mb"><img src="img/circle-check-regular-full.svg" alt="img" width="30px" height="30px" style="position: relative; top: 5px;">1000минут</p>
+  <li class="mb" title="circle">Внутри звонки сети безлитное</li>
+  <div class="click-tariff">Подключить</div></div>
+
+        
+        <div class="my-tariff1">
+             <p class="beta">Мега-минут</p>
+     <p class="mb"><img src="img/circle-check-regular-full.svg" alt="img" width="30px" height="30px" style="position: relative; top: 5px;">5000-минут </p>
+  <p class="mb"><img src="img/circle-check-regular-full.svg" alt="img" width="30px" height="30px" style="position: relative; top: 5px;">100смс</p>
+  <p class="mb"><img src="img/circle-check-regular-full.svg" alt="img" width="30px" height="30px" style="position: relative; top: 5px;">50сомони</p>
+  <li class="mb" title="circle">Внутри звонки сети безлитное</li>
+             <div class="click-tariff">Подключить</div>
+        </div></div>
+
+        <div class="my-tariff"  data-aos="fade-up">
+        <div class="my-tariff1">
+            <p class="beta">25-Бета</p>
+             <p class="mb"><img src="img/circle-check-regular-full.svg" alt="img" width="30px" height="30px" style="position: relative; top: 5px;">25000мб</p>
+             <p class="mb"><img src="img/circle-check-regular-full.svg" alt="img" width="30px" height="30px" style="position: relative; top: 5px;">100смс</p>
+             <p class="mb"><img src="img/circle-check-regular-full.svg" alt="img" width="30px" height="30px" style="position: relative; top: 5px;">1000минут</p>
+             <li class="mb" title="circle">Внутри звонки сети безлитное</li>
+             <div class="click-tariff">Подключить</div>
+        </div>
+          
+    <div class="my-tariff1">
+    <p class="beta">50-Бета</p>
+     <p class="mb"><img src="img/circle-check-regular-full.svg" alt="img" width="30px" height="30px" style="position: relative; top: 5px;">50000мб </p>
+  <p class="mb"><img src="img/circle-check-regular-full.svg" alt="img" width="30px" height="30px" style="position: relative; top: 5px;">100смс</p>
+  <p class="mb"><img src="img/circle-check-regular-full.svg" alt="img" width="30px" height="30px" style="position: relative; top: 5px;">1000минут</p>
+  <li class="mb" title="circle">Внутри звонки сети безлитное</li>
+  <div class="click-tariff">Подключить</div></div>
+        
+       <div class="my-tariff1">
+             <p class="beta">Мега-минут</p>
+     <p class="mb"><img src="img/circle-check-regular-full.svg" alt="img" width="30px" height="30px" style="position: relative; top: 5px;">5000-минут </p>
+  <p class="mb"><img src="img/circle-check-regular-full.svg" alt="img" width="30px" height="30px" style="position: relative; top: 5px;">100смс</p>
+  <p class="mb"><img src="img/circle-check-regular-full.svg" alt="img" width="30px" height="30px" style="position: relative; top: 5px;">50сомони</p>
+  <li class="mb" title="circle">Внутри звонки сети безлитное</li>
+             <div class="click-tariff">Подключить</div></div> 
+           
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+
+      <script src="King mobile.js"></script>
+</body>
+</html>

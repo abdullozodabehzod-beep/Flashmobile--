@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости</title>
+    <link rel="icon" href="img/file-invoice-solid-full.svg" type="image" class="betaphone">
+    <link rel="stylesheet" href="King mobile.css">
+     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+     <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body>
+    <style>
+       * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background: #f5f5f5;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 300px;
+    }
+
+    .swiper-slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .swiper-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    } 
+     
+
+</style>
+
+   <header class="header" data-aos="fade-up">
+    <span><a href="#"><img src="img/bolt-solid-full.svg" alt="one" width="80px" height="80px" style="position: relative; top: 20px;"></a></span>
+    <span ><a href="King mobile.html" class="mobile">Flashmobile</a></span>
+    <a href="tariff.html" class="tariff"><span id="translate1">Тарифы</span></a>
+    <a href="options.html" style="text-decoration: none;"><span class="option" id="translate2">Опции</span></a>
+    <a href="numbers.html" style="text-decoration: none;"><span class="numbers"id="translate3">Номера</span></a>
+    <span class="ournumber"><a href="#">+992 333 000 333</a></span> 
+    <span><img src="img/location-dot-solid-full.svg" class="imgmap" width="27px" height="27px"></span>
+    <span><a href="Душанбе.html" class="city" id="translate4">Душанбе</span></a>
+    <span><a href="contact.html" class="contact" id="translate5">Контакты</a></span>
+    <span><a href="service.html" class="service" id="translate6">Услуги</a></span>
+    <span class="select-lang">
+       <select id="language" onchange="changeLanguage()">
+        <option value="ru">RU</option>
+        <option value="en">EN</option>
+       </select>
+    </span>
+    </header>
+    <p style="text-align: center; margin-top: 200px; font-size: 50px; color: rgb(255, 155, 6); background-color: antiquewhite; height: 200px;">Новости</p>
+
+    <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPfCm_F3aZA4_GmCiYAyFsKsQm_Ev-vyqCFQ&s" alt="Image 1">
+      </div>
+      <div class="swiper-slide">
+        <img src="https://prav.mos.ru/static/2022/08/27/07685fa4-1eca-433d-beca-27b237757b98.png" alt="Image 2">
+      </div>
+      <div class="swiper-slide">
+        <img src="https://ictnews.uz/wp-content/uploads/2016/08/0908.png" alt="Image 3">
+      </div>
+      <div class="swiper-slide">
+        <img src="https://online.kr.ua/wp-content/uploads/2024/03/podderzhka2.png" alt="Image 4">
+      </div>
+      <div class="swiper-slide">
+        <img src="https://money24.kiev.ua/wp-content/uploads/2021/05/globe-world-spending-money-currency-ss-1920-800x450-1.jpg" alt="Image 5">
+      </div>
+    </div>
+
+    <!-- Кнопки -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+    <!-- Пагинация -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      
+     const swiper = new Swiper('.mySwiper', {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      speed: 600,
+
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        }
+      }
+    });
+
+     
+
+    </script>
+  
+      <script>
+        AOS.init();
+      </script>
+
+      <script src="King mobile.js"></script>
+       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+     
+       
+</body>
+</html>
